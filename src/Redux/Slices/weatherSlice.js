@@ -1,10 +1,11 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
+// { rejectWithValue, getState, dispatch }
 //   Action
 export const fetchWeather = createAsyncThunk(
   'weatherSlice/weather',
-  async (payload, { rejectWithValue, getState, dispatch }) => {
+  async (payload, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${payload}&appid=0447120cb54e5dfb3cdfbd5191ffa2dd`,
