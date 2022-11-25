@@ -5,15 +5,17 @@ import { Provider } from 'react-redux';
 import App from './App';
 import './index.css';
 import Store from './Redux/Store/store';
+import Home from './Pages/home';
+import Contacts from './Pages/contacts';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    // children: [
-    //   { path: '/', element: <Home /> },
-    //   { path: '/Contacts', element: <Contacts /> },
-    // ],
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/Contacts', element: <Contacts /> },
+    ],
   },
 ]);
 const container = document.getElementById('root');
