@@ -7,6 +7,7 @@ import './index.css';
 import Store from './Redux/Store/store';
 import Home from './Pages/home';
 import Contacts from './Pages/contacts';
+import Weather from './Components/weather';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: '/', element: <Home /> },
+      { path: '/Weather', element: <Weather /> },
       { path: '/Contacts', element: <Contacts /> },
     ],
   },

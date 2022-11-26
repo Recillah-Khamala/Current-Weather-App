@@ -1,35 +1,46 @@
 import { useSelector } from 'react-redux';
-// import { fetchWeather } from '../Redux/Slices/weatherSlice';
 import Display from './Display';
-import world from '../Weather/world_weather_map-removebg-preview.png';
 import Search from './Form';
+import africa from '../africa.png';
+import asia from '../asia.png';
+import antactica from '../antactica.png';
+import europe from '../europe.png';
+import samerica from '../samerica.png';
+import namerica from '../namerica.png';
 
-// display icon https://openweathermap.org/img/wn/${icon}.png
 const Weather = () => {
   const { showDisplay, error, loading } = useSelector((state) => state);
   return (
-    <div>
-      <section className="relative bg-gray-900  min-h-screen">
-        <div className="relative container pt-12 px-4 mb-20 mx-auto text-center">
-          <span className="">
-            <img className="w-56 lg:block " src={world} alt="/" />
-          </span>
-          <p className="max-w-3xl mx-auto mb-8 lg:mb-12 text-white text-xl opacity-50">
-            Find out the current weather situation around the world
-          </p>
-          {/* Input */}
-          <Search />
+    <div className="bg-cornflower-blue">
+      <section className="relative min-h-screen flex flex-row items-center">
+        <div className="items-center w-1/4 opacity-50">
+          <img src={africa} alt="/" width={150} height={150} />
+          <img src={antactica} alt="/" width={350} height={350} />
+          <img src={asia} alt="/" width={200} height={200} />
         </div>
-        {/* Content goes here */}
-        {loading && (
-          <h1 className="text-gray-400 text-4xl text-center">
-            Loading please wait...
-          </h1>
-        )}
-        {error && (
-          <h1 className="text-red-400 text-2xl text-center">{error}</h1>
-        )}
-        {showDisplay === true && <Display />}
+        <div className="w-2/4">
+          <div className="relative container px-4 mb-4  text-center w-full">
+            {/* Input */}
+            <Search />
+          </div>
+          {/* Content goes here */}
+          {loading && (
+            <h1 className="text-gray-400 font-bold text-4xl text-center">
+              Loading please wait...
+            </h1>
+          )}
+          {error && (
+            <h1 className="text-slate-200 font-bold text-2xl text-center">
+              {error}
+            </h1>
+          )}
+          {showDisplay === true && <Display />}
+        </div>
+        <div className="w-1/4 opacity-50">
+          <img src={europe} alt="/" width={200} height={200} />
+          <img src={namerica} alt="/" width={200} height={200} />
+          <img src={samerica} alt="/" width={200} height={200} />
+        </div>
       </section>
     </div>
   );

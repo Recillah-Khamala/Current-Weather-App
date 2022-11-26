@@ -7,33 +7,33 @@ const Display = () => {
   const { weather } = selector;
 
   return (
-    <div className="max-w-6xl px-4 mx-auto ">
+    <div className="w-full px-4  ">
       <div className="flex flex-wrap -mx-4 justify-center">
-        <div className="w-full md:w-1/3 px-4">
+        <div className="w-full md:w-1/3 lg:w-full px-4">
           <div className="p-8 border border-blue-800 rounded-lg">
             <div className="flex justify-start  items-center">
-              <span className="flex items-center justify-center w-16 h-16 rounded-full border-2">
+              <span className="flex items-center justify-center w-16 h-16 rounded-full border-4">
                 {/* weather logo */}
                 <img
-                  className="w-56 "
+                  className="w-56 font-extrabold"
                   src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@2x.png`}
                   alt="/"
                 />
               </span>
-              <h1 className="text-gray-300 pl-5">{weather?.weather[0].main}</h1>
+              <h1 className="text-white font-bold pl-5">{weather?.weather[0].main}</h1>
               {' '}
             </div>
-            <h1 className="text-gray-300 text-center text-4xl mb-10">
+            <h1 className="text-white font-bold text-center text-4xl mb-10">
               {Math.floor(Number(weather?.main.temp) - 273)}
               {' '}
-              <span className="text-yellow-500 text-4xl">°C</span>
+              <span className="text-yellow-500 text-4xl font-bold">°C</span>
             </h1>
-            <h3 className="mb-6 text-xl text-white font-semibold">
+            <h3 className="mb-6 text-xl font-semibold text-white">
               {weather?.name}
               ,
               {weather?.sys?.country}
             </h3>
-            <p className="mb-8 text-gray-300">
+            <p className="mb-8 text-slate-100 font-semibold">
               The weather condition in
               {' '}
               {weather?.name}
@@ -61,7 +61,7 @@ const Display = () => {
               className="ml-auto flex items-center justify-center w-20 h-20 rounded-full  hover:bg-blue-700 text-white"
               href="#"
             >
-              <span className="flex items-center justify-center w-16 h-16 rounded-full border-2">
+              <span className="flex items-center justify-center w-16 h-16 rounded-full border-4">
                 {/* weather logo */}
                 <img
                   className="w-56 "
