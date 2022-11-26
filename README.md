@@ -115,7 +115,7 @@ Clone [this](git@github.com:Recillah-Khamala/Current-Weather-App.git) GitHub rep
 
 ### Deployment
 
-[COMING SOON]
+[Check the site here](https://curr-weather-site.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
