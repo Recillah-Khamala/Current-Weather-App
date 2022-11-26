@@ -5,7 +5,7 @@ import Navigation from './Components/Navigation';
 
 function App() {
   return (
-    <div className="App">
+    <div className="min-h-[94vh] bg-cornflower-blue">
       <Navigation />
       <div>
         <Outlet />
