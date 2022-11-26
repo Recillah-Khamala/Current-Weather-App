@@ -29,6 +29,7 @@ const Display = () => {
                   </span>
                   <h1 className="text-gray-300 pl-5">
                     {weather?.weather[0].main}
+                  </h1>
                   {' '}
                 </div>
                 <h1 className="text-gray-300 text-center text-4xl mb-10">
@@ -64,7 +65,7 @@ const Display = () => {
                   {' '}
                   %
                 </p>
-                <a
+                <div
                   className="ml-auto flex items-center justify-center w-20 h-20 rounded-full  hover:bg-blue-700 text-white"
                   href="#"
                 >
@@ -76,7 +77,7 @@ const Display = () => {
                       alt="/"
                     />
                   </span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
