@@ -6,7 +6,7 @@ export const fetchWeather = createAsyncThunk(
   async (payload, { rejectWithValue }) => {
     try {
       const data = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${payload}&appid=0447120cb54e5dfb3cdfbd5191ffa2dd`
+        `https://api.openweathermap.org/data/2.5/weather?q=${payload}&appid=0447120cb54e5dfb3cdfbd5191ffa2dd`,
       );
       return data.data;
     } catch (error) {
@@ -15,7 +15,7 @@ export const fetchWeather = createAsyncThunk(
       }
       return rejectWithValue(error?.response?.data);
     }
-  }
+  },
 );
 
 const weatherSlice = createSlice({

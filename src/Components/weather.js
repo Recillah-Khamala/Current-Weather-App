@@ -1,18 +1,22 @@
-import { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchWeather } from '../Redux/Slices/weatherSlice';
-import Search from './Search';
+import { useSelector } from 'react-redux';
+// import { fetchWeather } from '../Redux/Slices/weatherSlice';
 import Display from './Display';
+import world from '../Weather/world_weather_map-removebg-preview.png'
+import Search from './Form';
 
 // display icon https://openweathermap.org/img/wn/${icon}.png
 const Weather = () => {
-    const {showDisplay} =  useSelector((state) => state);
- return (
+  const { showDisplay } = useSelector((state) => state);
+  return (
     <div>
       <section className="relative bg-gray-900  min-h-screen">
         <div className="relative container pt-12 px-4 mb-20 mx-auto text-center">
-          <span className="text-blue-500 font-semibold">
-            Built with react and redux
+          <span className="">
+            <img
+              className="w-56 lg:block "
+              src={world}
+              alt="/"
+            />
           </span>
           <h2 className="mt-8 mb-8 lg:mb-12 text-white text-4xl lg:text-6xl font-semibold">
             Weather App

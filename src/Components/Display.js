@@ -29,21 +29,40 @@ const Display = () => {
                   </span>
                   <h1 className="text-gray-300 pl-5">
                     {weather?.weather[0].main}
-                  </h1>{' '}
+                  {' '}
                 </div>
                 <h1 className="text-gray-300 text-center text-4xl mb-10">
-                  {Math.floor(Number(weather?.main.temp) - 273)}{' '}
+                  {Math.floor(Number(weather?.main.temp) - 273)}
+                  {' '}
                   <span className="text-yellow-500 text-4xl">°C</span>
                 </h1>
                 <h3 className="mb-6 text-xl text-white font-semibold">
-                  {weather?.name},{weather?.sys?.country}
+                  {weather?.name}
+                  ,
+                  {weather?.sys?.country}
                 </h3>
                 <p className="mb-8 text-gray-300">
-                  The weather condition in {weather?.name},{' '}
-                  {weather?.sys?.country} is described as :{' '}
-                  {weather?.weather[0].description} with a temperature of{' '}
-                  {Math.floor(Number(weather?.main.temp) - 273)} °C and a
-                  humidity of {weather?.main?.humidity} %
+                  The weather condition in
+                  {' '}
+                  {weather?.name}
+                  ,
+                  {' '}
+                  {weather?.sys?.country}
+                  {' '}
+                  is described as :
+                  {' '}
+                  {weather?.weather[0].description}
+                  {' '}
+                  with a temperature of
+                  {' '}
+                  {Math.floor(Number(weather?.main.temp) - 273)}
+                  {' '}
+                  °C and a
+                  humidity of
+                  {' '}
+                  {weather?.main?.humidity}
+                  {' '}
+                  %
                 </p>
                 <a
                   className="ml-auto flex items-center justify-center w-20 h-20 rounded-full  hover:bg-blue-700 text-white"
