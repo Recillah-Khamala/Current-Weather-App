@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing by jest snapshots matches navigation  Snapshot 1`] = `
+<nav
+  className="flex justify-between py-8 border-b bg-steel-blue text-white lg:px-12"
+>
+  <div
+    className="w-1/3 flex lg-gap-5 items-center font-bold md-text-2xl lg-text-2xl lg-leading-10 lg-tracking-wide capitalize"
+  >
+    <img
+      alt="logo"
+      className="w-8 md-w-12 lg-w-16 h-8 md-h-12 lg-h-20"
+      src="logo.png"
+    />
+    <div>
+       Current Weather App
+    </div>
+  </div>
+  <ul
+    className="flex gap-1 lg:gap-14 items-center font-medium"
+  >
+    <li>
+      <a
+        aria-current="page"
+        className="font-extrabold lg-font-black border md-border-2 lg-border-4 rounded-full bg-blue-900 p-4"
+        href="#/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="#/Weather"
+        onClick={[Function]}
+      >
+        Weather
+      </a>
+    </li>
+    <li>
+      <a
+        className=""
+        href="#/Contacts"
+        onClick={[Function]}
+      >
+        Contact Us
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
