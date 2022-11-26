@@ -38,15 +38,14 @@ const weatherSlice = createSlice({
       const st = state;
       st.weather = action?.payload;
       st.loading = false;
-      st.error = undefined;
       st.showDisplay = true;
+      st.error = '';
     });
     // rejected
     builder.addCase(fetchWeather.rejected, (state, action) => {
       const st = state;
+      st.error = action?.payload.message;
       st.loading = false;
-      st.weather = undefined;
-      st.error = action?.payload;
     });
   },
 });

@@ -1,18 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchWeather, hideDisplay } from '../Redux/Slices/weatherSlice';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { GrClose } from 'react-icons/gr';
+import { fetchWeather, hideDisplay } from '../Redux/Slices/weatherSlice';
 
 const Search = () => {
-  const { showDisplay } = useSelector((state) => state);
   const [location, setLocation] = useState('');
   // dispatch action
   const dispatch = useDispatch();
-  useEffect(() => {
-    if (location) {
-      dispatch(fetchWeather());
-    }
-  }, []);
 
   const handleChange = (e) => {
     const { value } = e.target;
@@ -30,17 +24,17 @@ const Search = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="relative inline-block w-full md:w-auto mb-2 mr-4  font-medium leading-normal bg-transparent border-2 rounded-lg text-neutral-400 ">
+    <form onSubmit={handleSubmit} className="items-center lg:px-44 lg:py-4">
+      <div className="relative lg:w-3/4 inline-block w-full md:w-auto mb-2 mr-4  font-medium leading-normal bg-transparent border-2 rounded-lg text-neutral-400 ">
         <input
           value={location}
           onChange={handleChange}
-          placeholder="Search City"
+          placeholder="Enter Location"
           type="text"
-          className="w-full h-full border-none px-3 py-2 rounded-lg"
+          className="w-full h-full text-xl border-none px-3 py-4 rounded-lg"
         />
         <GrClose
-          className=" fill-slate-200 bg-slate-300 rounded px-1 py-1 absolute right-2 top-3 active:scale-105"
+          className=" fill-slate-200 bg-slate-300 rounded px-1 mx-2 absolute right-2 top-3 active:scale-105"
           onClick={handleClose}
         />
       </div>
