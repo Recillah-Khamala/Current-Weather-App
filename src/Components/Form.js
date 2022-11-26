@@ -24,7 +24,7 @@ const Search = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="items-center lg:px-44 lg:py-4">
+    <form onSubmit={handleSubmit} className="items-center w-full lg:py-4">
       <div className="relative lg:w-3/4 inline-block w-full md:w-auto mb-2 mr-4  font-medium leading-normal bg-transparent border-2 rounded-lg text-neutral-400 ">
         <input
           value={location}

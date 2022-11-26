@@ -44,10 +44,7 @@ After you're finished please remove all the comments and instructions!
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment]
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -89,9 +86,7 @@ As the name suggests, with this app, you get the current weather conditions of a
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://www.loom.com/share/2ccca27eb7e74d5ab89048f30b823c77)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,77 +100,22 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+The following applications are required to be installed for the project to run!
+- Modern browser e.g [Google Chrome](https://www.google.com/chrome/), [Edge](https://www.microsoft.com/en-us/edge?r=1), [Firefox](https://www.mozilla.org/en-US/exp/firefox/new/) etc.
+- [Node.js](https://nodejs.org/en/download/) LTS version
+- [Git](https://git-scm.com/downloads)
 
 ### Setup
 
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+Clone [this](git@github.com:Recillah-Khamala/Current-Weather-App.git) GitHub repository using `git clone git@github.com:Recillah-Khamala/Current-Weather-App.git`
+- Download all required modules using `npm install` inside the project directory (/CURRENT-WEATHER-APP)
+- Launch project on browser using `npm start` inside the project directory (/CURRENT-WEATHER-APP)
+    - This should launch the app on the browser
+    - If the app is not opened immediately, then open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+[COMING SOON]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
