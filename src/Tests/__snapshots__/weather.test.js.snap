@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing by jest snapshots matches Weather  Snapshot 1`] = `
+<div
+  className="bg-cornflower-blue"
+>
+  <section
+    className="relative min-h-screen flex flex-row items-center"
+  >
+    <div
+      className="items-center w-1/4 opacity-50"
+    >
+      <img
+        alt="/"
+        height={150}
+        src="africa.png"
+        width={150}
+      />
+      <img
+        alt="/"
+        height={350}
+        src="antactica.png"
+        width={350}
+      />
+      <img
+        alt="/"
+        height={200}
+        src="asia.png"
+        width={200}
+      />
+    </div>
+    <div
+      className="w-2/4"
+    >
+      <div
+        className="relative container px-4 mb-4  text-center w-full"
+      >
+        <form
+          className="items-center w-full lg:py-4"
+          onSubmit={[Function]}
+        >
+          <div
+            className="relative lg:w-3/4 inline-block w-full md:w-auto mb-2 mr-4  font-medium leading-normal bg-transparent border-2 rounded-lg text-neutral-400 "
+          >
+            <input
+              className="w-full h-full text-xl border-none px-3 py-4 rounded-lg"
+              onChange={[Function]}
+              placeholder="Enter Location"
+              type="text"
+              value=""
+            />
+            <svg
+              className=" fill-slate-200 bg-slate-300 rounded px-1 mx-2 absolute right-2 top-3 active:scale-105"
+              fill="currentColor"
+              height="1em"
+              onClick={[Function]}
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3,3 L21,21 M3,21 L21,3"
+                fill="none"
+                stroke="#000"
+                strokeWidth="2"
+              />
+            </svg>
+          </div>
+          <button
+            className="inline-flex items-center px-3 pr-3 28 text-center py-3 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            onClick={[Function]}
+            type="button"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      className="w-1/4 opacity-50"
+    >
+      <img
+        alt="/"
+        height={200}
+        src="europe.png"
+        width={200}
+      />
+      <img
+        alt="/"
+        height={200}
+        src="namerica.png"
+        width={200}
+      />
+      <img
+        alt="/"
+        height={200}
+        src="samerica.png"
+        width={200}
+      />
+    </div>
+  </section>
+</div>
+`;
